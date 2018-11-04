@@ -1,0 +1,136 @@
+/* Core Addition */
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f6ebab;
+}
+
+/******************** Header ********************/
+
+header {
+    position: relative;
+
+    height: 13%;
+    width: 100%;
+    /*    border: 3px solid red;*/
+    font-family: sans-serif;
+}
+
+.headerContainer {
+    position: fixed;
+
+    width: 100%;
+    height: 13%;
+}
+
+#titleContainer {
+    position: absolute;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    
+    color: #f2a9bb;
+    font-family: "Eater", "Indie Flower", "Cursive";
+/*    border: 1px solid black;*/
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    /*    flex-direction: column;*/
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    /*    border: 1px solid yellow;*/
+}
+
+#nav h2 {
+    /*    border: 1px solid black;*/
+    margin: 0 4%;
+    
+    font-family: "Eater", "Indie Flower", "Cursive";
+}
+
+#nav h2 a {
+    text-decoration: none;
+    color: #f2a9bb;
+
+    transition: 0.2s all;
+}
+
+#nav h2 a:hover {
+    color: blue;
+}
+
+/******************** Main ********************/
+
+main {
+    position: relative;
+    
+    display: flex;
+    
+    height: 74%;
+    width: 100%;
+/*    border: 3px solid blue;*/
+}
+
+main #leftNavContainer {
+    position: fixed;
+    
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+/*    border: 1px solid black;*/
+    height: 35%;
+    width: 10%;
+    z-index: 1;
+}
+
+.leftNav h2 {
+    font-family: "Eater", "Indie Flower", "Cursive";
+    font-size: 1.2em;
+    color: #f2a9bb;
+}
+
+#imageContainer {
+    position: absolute;
+    left: 3.1%;
+
+    display: flex;
+    justify-content: space-between;
+    /*    border: 3px solid orange;*/
+    height: 100%;
+    width: auto;
+}
+
+#imageContainer img {
+    position: relative;
+
+    border: 1px solid black;
+    width: auto;
+    height: 100%;
+    margin-right: 0.5%;
+}
+
+/******************** Footer ********************/
+
+footer {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 13%;
+    /*    border: 3px solid green;*/
+    overflow: hidden;
+}
